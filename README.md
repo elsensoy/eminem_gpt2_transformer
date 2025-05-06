@@ -56,7 +56,7 @@ This repository showcases the technical steps involved in:
 * Custom tokenization and analysis scripts
 ---
 
-## Sample Output
+## Sample Output 1:
 
 > *(Prompt: "I ate three cupcakes". Generated sample from fine-tuned GPT-2 model with rhyme seed prompt)*
 ```Colab
@@ -65,7 +65,7 @@ This repository showcases the technical steps involved in:
  generator = pipeline("text-generation", model="Elida-Sensoy/gpt2-eminem-lyrics")
  set_seed(52)  # for reproducibility
  
- prompt = "I ate three cupcakes."  # your starting line
+ prompt = "I ate three cupcakes."  # starting line
  
  results = generator(
      prompt,
@@ -89,6 +89,45 @@ I ate three cupcakes 'cause I was getting drunk Fuck the world 'cause I woke up 
 
 > *🎵 Verse 3:
 I ate three cupcakes, then I heard they been taken awayI turned around and started going "Ha ha"Turned around and jumped back againGrabbed my camera in one hand and took a picture and I put it inside my heartJust to show you just how freaking insane my ex-wife (Maggie Ruess)Isn't that insane?Cause I don't need you being selfishAnd not even getting your respectBecause if there are things that you do that will benefit meEven the most basic necessities are necessitiesWhen a bitch who does not give a fuck, even comes up behindYou are selfishIf we did say somethin togetherThat if I went down in hell I might not be that personThere really should be some sort of warning sent outBut nobody wants to listenI need a father to hold me[Hook:]Pray I did something smart, so that when I passed life, it might not turnThis rhyme would be funny and be like "Yeah!"(Hmm)*
+
+## Sample Output 2:
+
+> *(Prompt: "There is no fun. Of course I am joking.". Generated sample from fine-tuned GPT-2 model with rhyme seed prompt)*
+```Colab
+ from transformers import pipeline, set_seed
+ 
+ generator = pipeline("text-generation", model="Elida-Sensoy/gpt2-eminem-lyrics")
+ set_seed(52)  # for reproducibility
+ 
+ prompt = "There is no fun. Of course I am joking."  # starting line
+ 
+ results = generator(
+     prompt,
+     max_length=200,
+     num_return_sequences=3,      #  generate 3 completions
+     temperature=1.75,             # higher = more creative
+     top_p=0.95,                  #  nucleus sampling
+     do_sample=True,
+     truncation=True,
+     pad_token_id=50256           # prevents warnings with GPT-2
+ )
+ 
+ for i, res in enumerate(results):
+     print(f"\n🎵 Verse {i+1}:\n{res['generated_text']}")
+```
+     
+
+Device set to use cpu
+
+🎵 Verse 1:
+There is no fun. Of course I am joking. But life's a game but your skill's on my line like no I don't know why so farI been in three lanes, never able to slow upThere's shit I do that will get me downThere's dirt, shit that's nastyBut there's nothing left.There's nothing that anybody gives a goddamn reason what there feels to feelThe only thing I love is competitionNow you know that feeling in which the greatest belongNobody ever caught it better than Nate Dworkin'You're still fucking beautifulNow take this chanceYou just wanna show them just how much you've already gotThere's shit you can do when you just liveIt only gets better when you put it in people's facesThat's called recognitionYou got recognition, DreThe fans can relate you just great if you act like meIf I did my jobs perfect rightYou can grow up to suck shit quicker.Yo I do everything in my power to bring it up
+
+🎵 Verse 2:
+There is no fun. Of course I am joking.So what's the problem?It's nothing, just the past that we liveThe future we plan for just don't arrive atAll we want is one for the time beingSo goodbye!You know we love ya!And if your home of horrorsA place where none existAnd I just can't say for certain thatThere isn't anyone out there who knowsThat I believe in loveMaybe that hurts (haha), maybe that's what hurtsMaybe it's the same maybe that made her sickThis monster loves me even though she's got me seething(whoa what?)[Chorus][Eminem (Sia): "Can't hear her sobbing louder anymore":]There comes a time in every couple that we settle or close or where our love or at this late dateIf we ever hit up that exact same placeOr get into an argument and I feel the need to kick it and call or text and reach
+
+🎵 Verse 3:
+There is no fun. Of course I am joking. You'd think there was more drama but there isn't.Don't even get me started..You're nuts. Go after 'em all!You feel so empty inside. Don't you ever breathe easy and hard again?This is all you ever talk. No! Stop. This is all you ever tell me that I must take!Now what we in this business do when we get heated..You can call me cold or sweet or bitter,Whatever our taste and your intentionsWe as Americans are always looking at each other and there won't be no difference we made in this competition, no difference.Canadians know that in each season we push off (off)The more changes make we endure in realityThen our relationship in the game (introduce us)...And so how are we set upon?Shoulders or nocksAre always pointed (a nose or a hump is placed in)We will tell you the difference is the bigger
+
 
 ---
 ## Ethical Note
