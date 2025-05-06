@@ -1,15 +1,25 @@
 Copyright (c) 2025 Elida Sensoy
 
-All rights reserved.
+All Rights Reserved.
 
-This repository and its contents, including but not limited to code, model weights, training data, scripts, and documentation, are proprietary and confidential. Unauthorized copying, use, or distribution of any part of this repository is strictly prohibited without express written permission from the copyright owner.
+Proprietary License
 
-You may not:
-- Reproduce or share any portion of the contents.
-- Host the model elsewhere.
-- Integrate this work into any other product or research.
-- Use this project for commercial purposes or training derivative models.
+This software repository and its contents, including but not limited to all source code, object code, algorithms, model weights, datasets, scripts, workflows, documentation, and associated files (collectively, "the Software"), are the proprietary intellectual property of the copyright holder specified above.
 
-To request permission or collaboration, contact: elidasensoy@<your-email-or-domain.com>
+Possession, viewing, or accessing the Software does not grant any license or rights under any intellectual property rights of the copyright holder, except for the limited right to view the Software in the location where it is publicly displayed by the copyright holder (e.g., a public GitHub repository) solely for evaluative or demonstrative purposes.
 
-Violation of these terms may result in legal action.
+Without the express prior written permission of the copyright holder, you are strictly prohibited from:
+
+1.  Reproducing, copying, duplicating, or distributing the Software or any portion thereof in any form.
+2.  Modifying, adapting, translating, reverse engineering, decompiling, disassembling, or creating derivative works based on the Software.
+3.  Hosting, publishing, transmitting, transferring, selling, licensing, renting, leasing, or sublicensing the Software or any portion thereof.
+4.  Using the Software or any portion thereof for any commercial purpose, or for any purpose other than the limited evaluative or demonstrative viewing explicitly permitted.
+5.  Integrating the Software or any portion thereof into any other software, product, research, service, or platform.
+6.  Removing, altering, or obscuring any copyright, trademark, or other proprietary notices contained in or on the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Any inquiries regarding permissions, licensing, or collaboration should be directed to the copyright holder at:
+elsensoy@umich.edu
+
+Unauthorized use, reproduction, or distribution of the Software may result in severe civil and criminal penalties, and will be prosecuted to the maximum extent possible under the law.
