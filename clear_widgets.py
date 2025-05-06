@@ -1,6 +1,6 @@
 import nbformat
 
-notebook_path = "rap_transformer_.ipynb"
+notebook_path = "rap_transformer.ipynb"
 
 with open(notebook_path) as f:
     nb = nbformat.read(f, as_version=4)
